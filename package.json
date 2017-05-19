@@ -1,0 +1,20 @@
+{
+  "name": "jasmine-web-reporter",
+  "version": "1.0.0",
+  "description": "Send jasmine2 / protractor results to webhook/service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/best4test/jasmine-web-reporter.git"
+  },
+  "keywords": [
+    "jasmine",
+    "protractor",
+    "reporter"
+  ],
+  "author": "Sebastian <sebastian@best4test.com> (http://best4test.com)",
+  "license": "ISC"
+}
