@@ -2,8 +2,9 @@
 
 Send jasmine2 / protractor results to webhook/service
 
-## Usage in protractor:
+## Protractor usage:
 
+Add to conf.js file
 ```
  onPrepare: function() {
     var webRep = require('jasmine-web-reporter');   
@@ -23,7 +24,7 @@ Send jasmine2 / protractor results to webhook/service
 
 ```
 
-## Usage with jasmine 
+## jasmine usage 
 
 Create jasmine.js 
 ```
