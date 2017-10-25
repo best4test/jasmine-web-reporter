@@ -16,5 +16,8 @@
     "reporter"
   ],
   "author": "Sebastian <sebastian@best4test.com> (http://best4test.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "frisby": "^2.0.7"
+  }
 }

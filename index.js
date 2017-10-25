@@ -37,10 +37,26 @@ exports.WebReporter = function(options) {
 
 	self.jasmineDone = function() {
 		testRun.endTime = new Date();
-		var request = require('request');
-		request.post(self.url, {json: true, body: testRun}, function(err,res,body){
-			console.log(err);
-		});		
+		const frisby = require('frisby');
+
+		function wait(ms){
+		   var start = new Date().getTime();
+		   var end = start;
+		   while(end < start + ms) {
+		     end = new Date().getTime();
+		  }
+		}
+
+		frisby
+		    .fetch(self.url, {
+		      method : 'POST',
+		      headers : {
+		      	'content-type' : 'application/json'
+		      },
+		      body : JSON.stringify(testRun)
+		    })
+		    .expect('status',200);	
+		wait(5000);	
 
 	};
 };
