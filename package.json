@@ -18,6 +18,6 @@
   "author": "Sebastian <sebastian@best4test.com> (http://best4test.com)",
   "license": "ISC",
   "dependencies": {
-    "frisby": "^2.0.7"
+    "sync-request": "^4.1.0"
   }
 }
